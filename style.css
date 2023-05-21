@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+:root {
+  --bg: #000000;
+  --cor-principal: #ffffff;
+  --fonte-principal: 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+body{
+  background-color: var(--bg);
+}
+canvas {
+  display: block;
+}
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.titulo__descricao {
+  font-size: 3em;
+  color: var(--cor-principal);
+  font-family: var(--fonte-principal);
+}
+.iniciar__jogo {
+  background-color: aqua;
+  padding: 1em 2em;
+  border-radius: 10px;
+}
+.descricao {
+  text-align: center;
+}
+.rodape {
+  text-align: center;
+}
+.facil {
+  background-color: rgb(38, 233, 38);
+}
+.normal {
+  background-color: yellow;
+}
+.dificil {
+  background-color: red;
+}
