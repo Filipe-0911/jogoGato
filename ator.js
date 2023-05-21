@@ -152,7 +152,7 @@ function venceuGame() {
     fill(255, 0, 0);
     text(winGame, 350, 250);
     textSize(50);
-    objeto. reload(forcedReload); 
+    objeto.reload(forcedReload); 
   } 
 }
 // ARRUMAR MENSAGEM DE winGame
