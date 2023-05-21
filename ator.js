@@ -4,7 +4,7 @@ let yAtor = 460;
 let colisao = false;
 let meusPontos = 2;
 let gameOverMSG = 'GAME OVER!!!! TENTE DE NOVO!!!';
-let winGame = "VOCÊ GANHOU!!!";
+let winGame = "VOCÊ GANHOU!!! PRESSIONE F5";
 let meuNivel = 1;
 
 function mostraAtor() {
