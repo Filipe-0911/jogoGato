@@ -138,9 +138,7 @@ function proxNivel2 () {
     meuNivel +=1;
     meusPontos = 2;
     if(meuNivel === 3){
-      nivel3();
-      
-      
+      nivel3();     
     }  
   } 
   
@@ -148,13 +146,14 @@ function proxNivel2 () {
 
 function venceuGame() {
   if (meuNivel > 3) {
+    velocidadeCarros = [0, 0, 0, 0, 0, 0];
+    trilhaNivel3.loop(0, 1, 0.0);
+    yAtor = 460;
     fill(255, 0, 0);
     text(winGame, 350, 250);
     textSize(50);
-    velocidadeCarros = [0, 0, 0, 0, 0, 0];
-    trilhaSom.loop(0, 1, 0.0);
-    yAtor = 460;
-  }
+    objeto. reload(forcedReload); 
+  } 
 }
 // ARRUMAR MENSAGEM DE winGame
  
