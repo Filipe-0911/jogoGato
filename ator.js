@@ -3,7 +3,7 @@ let xAtor = 60;
 let yAtor = 460;
 let colisao = false;
 let meusPontos = 2;
-let gameOverMSG = 'GAME OVER!!!! TENTE DE NOVO!!!';
+let gameOverMSG = 'GAME OVER!!!! TENTE DE NOVO!!! PRESSIONE F5';
 let winGame = "VOCÊ GANHOU!!! PRESSIONE F5";
 let meuNivel = 1;
 
