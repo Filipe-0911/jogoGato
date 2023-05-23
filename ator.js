@@ -11,7 +11,7 @@ document.querySelector('.jogo').addEventListener('click', iniciar())
 
 function mostraAtor() {
 
-  image(imagemAtor, xAtor, yAtor, 40, 35);
+  image(imagemAtor, xAtor, yAtor, 40, 40);
 
 }
 
