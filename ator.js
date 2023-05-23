@@ -11,7 +11,7 @@ document.querySelector('.jogo').addEventListener('click', iniciar())
 
 function mostraAtor() {
 
-  image(imagemAtor, xAtor, yAtor, 40, 40);
+  image(imagemAtor, xAtor, yAtor, 30, 30);
 
 }
 
@@ -49,7 +49,7 @@ function movimentaAtor() {
 function verificaColisao() {
   //hit = collideRectCircle(x1, y1, width, heigth, X2, Y2, raio);
   for (let i = 0; i < imagensCarros.length; i++) {
-    colisao = collideRectCircle(xCarros[i], yCarros[i], comprimentoCarro, alturaCarro, xAtor, yAtor, 30)
+    colisao = collideRectCircle(xCarros[i], yCarros[i], comprimentoCarro, alturaCarro, xAtor, yAtor, 20)
     if (colisao) {
       colidiu();
     }
