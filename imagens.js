@@ -16,7 +16,8 @@ let trilhaNivel3;
 
 function preload() {
   imagemEstrada = loadImage("img/estrada.png");
-  imagemAtor = loadImage("img/gato.png");
+  //imagemAtor = loadImage("img/gato.png");
+  imagemAtor = loadImage("img/imagemGato.png");
   imagemCarro1 = loadImage("img/carro-1.png");
   imagemCarro2 = loadImage("img/carro-2.png");
   imagemCarro3 = loadImage("img/carro-3.png");
