@@ -7,6 +7,8 @@ let gameOverMSG = 'GAME OVER!!!! TENTE DE NOVO!!! PRESSIONE F5';
 let winGame = "VOCÊ GANHOU!!! PRESSIONE F5";
 let meuNivel = 1;
 
+document.querySelector('.jogo').addEventListener('click', iniciar())
+
 function mostraAtor() {
 
   image(imagemAtor, xAtor, yAtor, 40, 35);
