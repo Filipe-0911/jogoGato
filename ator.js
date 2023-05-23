@@ -91,6 +91,7 @@ function gameOver() {
     textSize(50);
     velocidadeCarros = [0, 0, 0, 0, 0, 0];
     trilhaSom.loop(0, 1, 0.0);
+    trilhaNivel3.loop(0, 1, 0.0);
     objeto.reload(forcedReload); 
   }
 }
