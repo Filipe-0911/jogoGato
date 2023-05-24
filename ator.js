@@ -7,7 +7,10 @@ let gameOverMSG = 'GAME OVER!!!! TENTE DE NOVO!!! PRESSIONE F5';
 let winGame = "VOCÊ GANHOU!!! PRESSIONE F5";
 let meuNivel = 1;
 
-document.querySelector('.jogo').addEventListener('click', iniciar())
+//document.querySelector('.jogo').addEventListener('click', iniciar())
+
+
+
 
 function mostraAtor() {
 
@@ -121,43 +124,34 @@ function proxNivel() {
     nivel2();
     meuNivel++;
     meusPontos = 2;
-    proxNivel2 ();
-  } 
-}
-
-function proxNivel2 () {
-  if (meuNivel >= 2 && meusPontos > 4) {
-    meuNivel +=1;
+  } else if (meuNivel >= 2 && meusPontos > 4) {
+    meuNivel++;
     meusPontos = 2;
-    if(meuNivel === 3){
-      nivel3();     
-    }  
-  } 
-  
+    if (meuNivel === 3) {
+      nivel3();
+    }
+  }
 }
 
-function venceuGame() {
-  if (meuNivel > 3) {
-    velocidadeCarros = [0, 0, 0, 0, 0, 0];
-    trilhaNivel3.loop(0, 1, 0.0);
-    yAtor = 460;
-    fill(255, 0, 0);
-    text(winGame, 350, 250);
-    textSize(50);
-    return;
-    //objeto.reload(forcedReload); 
-  } 
-}
-// ARRUMAR MENSAGEM DE winGame
- 
-function gameOver() {
+function resultadoJogo() {
   if (meusPontos == 0) {
-    fill(255, 0, 0);
-    text(gameOverMSG, 350, 180);
-    textSize(50);
-    velocidadeCarros = [0, 0, 0, 0, 0, 0];
-    trilhaSom.loop(0, 1, 0.0);
-    trilhaNivel3.loop(0, 1, 0.0);
-    //objeto.reload(forcedReload); 
+    exibirMensagem(gameOverMSG);
+    console.log('perdeu');
+    noLoop();
+    
+    
+  } else if (meuNivel == 4 && meusPontos == 2) {
+    exibirMensagem(winGame);
+    console.log('ganhou');
+    noLoop();
+    
   }
+}
+function exibirMensagem(mensagem) {
+  velocidadeCarros = [0, 0, 0, 0, 0, 0];
+  trilhaSom.loop(0, 1, 0.0);
+  trilhaNivel3.loop(0, 1, 0.0);
+  fill(255, 0, 0);
+  text(mensagem, 350, 180);
+  textSize(50);
 }

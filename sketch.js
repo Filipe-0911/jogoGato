@@ -12,9 +12,7 @@ function draw() {
   verificaColisao ();
   incluiPontos ();
   marcaPonto();
-  gameOver();
   proxNivel();
   incluiNivel();
-  venceuGame();
-  proxNivel2 ();
+  resultadoJogo ();
 }
