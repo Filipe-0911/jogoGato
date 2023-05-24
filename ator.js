@@ -18,6 +18,15 @@ function mostraAtor() {
 
 }
 
+function mostraSetas() {
+
+  image(setaCima, 580, 400, 30, 30);
+  image(setaBaixo, 580, 460, 30, 30);
+  image(setaDireita, 620, 430, 30, 30);
+  image(setaEsquerda, 540, 430, 30, 30);
+
+}
+
 function movimentaAtor() {
   if (keyIsDown(UP_ARROW)) {
     yAtor -= 3;

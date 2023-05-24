@@ -9,6 +9,11 @@ let trilhaSom;
 let pontosSom;
 let colidiuSom;
 let trilhaNivel3;
+//setas mobile
+let setaCima;
+let setaBaixo;
+let setaDireita;
+let setaEsquerda;
 
 
 
@@ -29,7 +34,13 @@ function preload() {
   trilhaSom = loadSound("sons/trilha.mp3");
   pontosSom = loadSound("sons/pontos.wav");
   colidiuSom = loadSound("sons/colidiu.mp3");
-  trilhaNivel3 = loadSound("sons/Movie-2.mp3")
+  trilhaNivel3 = loadSound("sons/Movie-2.mp3");
+
+  //carregamento setas mobile
+  setaCima = loadImage('img/setaCima.png')
+  setaBaixo = loadImage('img/setaBaixo.png')
+  setaEsquerda = loadImage('img/setaEsquerda.png')
+  setaDireita = loadImage('img/setaDireita.png')
 
   imagensCarros = [imagemCarro1, imagemCarro2, imagemCarro3, imagemCarro4, imagemCarro5, imagemCarro6]
 }
