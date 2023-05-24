@@ -86,18 +86,6 @@ function voltaAtorParaPosicaoInicial() {
   xAtor = 60;
 }
 
-function gameOver() {
-  if (meusPontos == 0) {
-    fill(255, 0, 0);
-    text(gameOverMSG, 350, 180);
-    textSize(50);
-    velocidadeCarros = [0, 0, 0, 0, 0, 0];
-    trilhaSom.loop(0, 1, 0.0);
-    trilhaNivel3.loop(0, 1, 0.0);
-    objeto.reload(forcedReload); 
-  }
-}
-
 function podeSeMoverY() {
   return yAtor < 466;
 
@@ -156,8 +144,19 @@ function venceuGame() {
     fill(255, 0, 0);
     text(winGame, 350, 250);
     textSize(50);
-    objeto.reload(forcedReload); 
+    //objeto.reload(forcedReload); 
   } 
 }
 // ARRUMAR MENSAGEM DE winGame
  
+function gameOver() {
+  if (meusPontos == 0) {
+    fill(255, 0, 0);
+    text(gameOverMSG, 350, 180);
+    textSize(50);
+    velocidadeCarros = [0, 0, 0, 0, 0, 0];
+    trilhaSom.loop(0, 1, 0.0);
+    trilhaNivel3.loop(0, 1, 0.0);
+    //objeto.reload(forcedReload); 
+  }
+}
