@@ -144,6 +144,7 @@ function venceuGame() {
     fill(255, 0, 0);
     text(winGame, 350, 250);
     textSize(50);
+    return;
     //objeto.reload(forcedReload); 
   } 
 }
