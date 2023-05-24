@@ -47,10 +47,7 @@ function movimentaAtor() {
 }
 
 function verificaColisao() {
-  //hit = collideRectCircle(x1, y1, width, heigth, X2, Y2, raio);
-  //hit = collideRectCircle(xCarros[i], yCarros[i], comprimentoCarro, alturaCarro, xAtor, yAtor, 20) se for colisao com circulo
   //hit = collideRectRect(200, 200, 100, 150, mouseX, mouseY, 50, 75);
-  //hit = collideRectRect(xCarros[i], yCarros[i], comprimentoCarro, alturaCarro, xAtor, yAtor, 30, 30); se for colisao com retangulo
   for (let i = 0; i < imagensCarros.length; i++) {
     colisao = collideRectRect(xCarros[i], yCarros[i], comprimentoCarro, alturaCarro, xAtor, yAtor, 30, 30)
     if (colisao) {
